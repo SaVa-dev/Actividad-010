@@ -1,0 +1,11 @@
+- name: Ping a servidores
+  hosts: localhost
+  tasks:
+    - name: ping a Ubuntu
+      debug:
+        msg: "Ping exitoso a Ubuntu Server "
+
+    - name: ping a Windows Server
+      debug:
+        msg: "Ping exitoso a Windows Server"
+

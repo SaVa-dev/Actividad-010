@@ -1,0 +1,14 @@
+- name: Windows Server
+  hosts: localhost
+  tasks:
+    - name: página web
+      copy:
+        dest: /tmp/index_windows.html
+        content: |
+          <html>
+            <head><title>Windows Server</title></head>
+            <body>
+              <h1>Esta es una página en Windows Server</h1>
+            </body>
+          </html>
+

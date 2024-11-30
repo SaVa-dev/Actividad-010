@@ -1,0 +1,14 @@
+- name: Ubuntu
+  hosts: localhost
+  tasks:
+    - name: Página web
+      copy:
+        dest: /tmp/index_ubuntu.html
+        content: |
+          <html>
+            <head><title>Ubuntu Server</title></head>
+            <body>
+              <h1>Esto es Ubuntu</h1>
+            </body>
+          </html>
+
